@@ -1,0 +1,19 @@
+package two;
+import java.util.Scanner;
+
+public class maxmin {
+ public static void main(String[] args) {
+			Scanner in = new Scanner(System.in);
+			
+		System.out.print("Enetr the number");
+		double laregst = in.nextDouble();
+		while(in.hasNextDouble()){
+			double input = in.NextDouble();
+			if(input > largest) {
+				largest = input;
+			}
+		}
+		System.out.println(largest);
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class std {
+
+	public static void main(String[] args) {
+		public static void main(String[] args) {
+			String name;
+			int roll, math, phy, eng;
+	        
+	        Scanner SC=new Scanner(System.in);
+	         
+	        System.out.print("Enter Name: ");
+	        name=SC.nextLine();
+	        System.out.print("Enter Roll Number: ");
+	        roll=SC.nextInt();
+	        System.out.print("Enter marks in Maths, Physics and English: ");
+	        math=SC.nextInt();
+		// TODO Auto-generated method stub
+
+	}
+
+}

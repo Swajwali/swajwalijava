@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+D:\swajwalijava\first\.metadata\.plugins\org.eclipse.jdt.core
-3083573100.index
-3838135287.index

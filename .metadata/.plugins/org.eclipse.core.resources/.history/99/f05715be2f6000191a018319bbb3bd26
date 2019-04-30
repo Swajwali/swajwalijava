@@ -1,0 +1,21 @@
+package two;
+import java.util.Scanner;
+
+public class maxmin {
+ 
+		
+		public static void main(string[] args) {
+			Scanner in = new Scanner(System .in);
+			
+		System.out.print("Enetr the number");
+		int laregst = in.nextint();
+		while(in.hasnextint() {
+			int input = in.nextint();
+			if(input > largest) {
+				largest = input;
+			}
+		}
+		System.out.print(largest);
+	}
+
+}

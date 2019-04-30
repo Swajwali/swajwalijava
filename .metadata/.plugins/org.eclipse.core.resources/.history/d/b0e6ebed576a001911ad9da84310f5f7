@@ -1,0 +1,18 @@
+import java.util.*;
+import java.io.*;
+ 
+public class reversestring {
+
+public static void main (String [] args)throws IOException
+{
+    FileReader fr = new FileReader("reverse_input.txt");
+    FileWriter fw = new FileWriter("reverse_output.txt");
+    BufferedReader janus = new BufferedReader(fr);
+     
+    String data;
+    String reverse;
+     
+    while ((data = janus.readLine()) != null) 
+    System.out.println (data);
+}
+}

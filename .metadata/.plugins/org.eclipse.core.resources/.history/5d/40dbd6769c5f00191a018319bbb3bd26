@@ -1,0 +1,39 @@
+import first.three;
+
+public class maxnumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		three t=new three(3);
+    	t[0]="10";
+    	t[1]="20";
+    	t[2]="30";
+    	
+		int maxvalue=args[0];
+		for(int i=1;i<args.length;i++)
+		{
+			if(args[i]>maxvalue)
+			{
+				maxvalue=args[i];
+			}
+		}
+		return maxvalue;
+		
+		}
+		public static int getmax value(int[i]numbers)
+		{
+			int minvalue=numbers[0];
+			for(int i=1;i<numbers.lenght;i++)
+			{
+				if(numbers[i]<minvalue)
+				{
+					minvalue=numbers[i];
+				}
+			}
+			return minvalue;
+		}
+				
+			
+	}
+
+}

@@ -1,0 +1,57 @@
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+
+public class studentinfo {
+
+	public static void main(String[] args) {
+		try {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			DataOutputStream dos = new DataOutputStream(new FileOutputStream("stud.dat"));
+			while (true) {
+				System.out.print("Enter roll no:");
+				int rno = Integer.parseInt(br.readLine());
+				if (rno == 0) {
+					break;
+				}
+				System.out.print("Enter name:");
+				String name = br.readLine();
+				System.out.print("Enter class:");
+				String cls = br.readLine();
+
+				System.out.print("Enter percentage:");
+				float per = Float.parseFloat(br.readLine());
+				dos.write(rno);
+				dos.writeUTF(name);
+				dos.writeUTF(cls);
+				dos.writeFloat(per);
+			}
+
+			dos.close();
+			System.out.print("Enter roll no:");
+
+			int no = Integer.parseInt(br.readLine());
+			DataInputStream dis = new DataInputStream(new FileInputStream("stud.dat"));
+			while (true) {
+				int rno = dis.readInt();
+				String name = dis.readUTF();
+				String cls = dis.readUTF();
+				float per = dis.readFloat();
+				if (rno == no) {
+					System.out.println("Roll No:" + rno + "\nName:" + name + "\nClass:" + cls + "\nPercentage:" + per);
+					break;
+				}
+			}
+			dis.close();
+
+		} catch (Exception e) {
+			System.out.println("Roll No Not Found.");
+
+		}
+
+	}
+
+}
