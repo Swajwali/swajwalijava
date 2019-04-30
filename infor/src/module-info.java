@@ -1,0 +1,2 @@
+module infor {
+}
